@@ -1,0 +1,1027 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+.main {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  overflow: hidden !important;
+}
+
+/* ============================================================================================= */
+/* CALCULATOR - Profile */
+/* ============================================================================================= */
+
+.calculator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+.calculator__content {
+  width: 70%;
+}
+
+.profile {
+  width: 50%;
+  margin: 0 0 30px 0;
+}
+
+.profile__img-container {
+  width: 120px;
+  height: 120px;
+}
+
+.person__img {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.profile__input {
+  margin-top: 10px;
+  border: none;
+  outline: none;
+  color: white;
+  background: transparent;
+}
+
+.profile__input--name {
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: 4px;
+}
+
+.profile__input-container {
+  display: flex;
+  margin-top: 10px;
+  gap: 20px;
+}
+
+.profile__input-gender-label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  gap: 5px !important;
+  color: white;
+}
+
+/* ============================================================================================= */
+/* CALCULATOR - Attributes */
+/* ============================================================================================= */
+
+.calculator__info-container {
+  display: flex;
+  align-items: center;
+  margin: 10px 0 30px 0;
+  border-radius: 10px;
+  height: 90px;
+  background-image: linear-gradient(#569cf6, #8733ad);
+}
+
+.calculator__age-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  color: #aaa;
+  margin: 0;
+  height: 90px !important;
+  transition: transform 0.1s, font-size 0.3s, color 0.3s;
+}
+
+.swiper-slide-active .calculator__age-slide {
+  font-size: 45px;
+  font-weight: bold;
+  color: white;
+  transform: scale(1.2); /* Make the active slide larger */
+}
+
+.calculator__data {
+  display: flex;
+  gap: 15px;
+  margin: 0 20px;
+  width: 100%;
+}
+
+.calculator__data-value {
+  color: white;
+  background: transparent;
+  border: none;
+  text-align: center;
+  font-size: 60px;
+  font-family: Inter;
+  font-weight: 600;
+  outline: none;
+  width: 25%;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* ============================================================================================= */
+/* BMI RESULTS - Gauge Chart */
+/* ============================================================================================= */
+
+.gauge-chart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
+  height: 100vh;
+}
+
+.gauge-chart__content {
+  width: 80%;
+}
+
+.gauge-chart__bmi-title {
+  font-weight: 600;
+  font-size: 40px;
+  margin: 0;
+  letter-spacing: 2px;
+  color: white;
+}
+
+.bmi__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center !important;
+  position: relative;
+  height: auto;
+  margin: 50px 0;
+}
+
+.scale__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.scale {
+  width: 20px;
+  border-radius: 8px;
+}
+
+.bmi {
+  text-align: left;
+  font-size: 30px;
+  color: white;
+  z-index: 100;
+}
+
+/* ============================================================================================= */
+/* BMI RESULTS - Weight Summary */
+/* ============================================================================================= */
+
+.weight-expression {
+  margin: 70px 0 0 0;
+}
+
+.weight-expression__content {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.expression {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 400 !important;
+  height: 250px;
+  margin: 0;
+  padding: 10px;
+  background-color: white;
+}
+
+.expression-img__content {
+  width: 50%;
+  height: 250px;
+}
+
+.expression-img {
+  width: 100%;
+  height: 100%;
+  border: 1px solid white;
+  object-fit: cover;
+}
+
+/* ============================================================================================= */
+/* BMI RESULTS - Animal Comparison */
+/* ============================================================================================= */
+
+.animal-modal {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  z-index: 1000;
+}
+
+.animal-stats__info-container {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: white;
+}
+
+.animal-stats__content {
+  width: 500px;
+  margin: 10px;
+}
+
+.stats__content {
+  margin-bottom: 10px;
+}
+
+.animal-stats__name,
+.animal-stats__user-name {
+  font-weight: 800;
+  font-size: 45px;
+  margin: 0;
+  background: -webkit-linear-gradient(#569cf6, #8733ad);
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.animal-stats__data-value {
+  font-weight: 800;
+  font-size: 30px;
+  margin-top: 10px;
+  list-style-type: none;
+}
+
+.animal-stat,
+.user-stat {
+  font-weight: 400;
+}
+
+.animal-stats__img-container {
+  width: 600px;
+  height: 420px;
+}
+
+.animal-stats__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  opacity: 0.5;
+  z-index: 100;
+  background-color: black;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 500px) {
+  .main {
+    flex-direction: column;
+  }
+
+  .calculator {
+    width: 100%;
+  }
+
+  .calculator__content {
+    width: 100%;
+  }
+
+  .profile {
+    margin: 30px 0 30px 0;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .profile__img-container {
+    margin: 0 auto;
+    width: 80px;
+    height: 80px;
+  }
+
+  .profile__input--name {
+    text-align: center;
+    width: 100%;
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing: 3px;
+  }
+
+  .profile__input-container {
+    justify-content: center;
+  }
+
+  .calculator__info-container {
+    margin: 10px 0 20px 0;
+    border-radius: 0px;
+    height: 60px;
+  }
+
+  .calculator__age-slide {
+    font-size: 18px;
+    height: 60px !important;
+  }
+
+  .swiper-slide-active .calculator__age-slide {
+    font-size: 27px;
+  }
+
+  .calculator__data-value {
+    color: white;
+    text-align: center;
+    font-family: Inter;
+    font-size: 40px;
+    width: 25%;
+  }
+
+  .gauge-chart {
+    width: 100%;
+    height: auto;
+  }
+
+  .gauge-chart__content {
+    position: relative;
+    margin-top: 35px;
+    width: 100%;
+  }
+
+  .gauge-chart__bmi-title {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .scale__content {
+    gap: 6px;
+  }
+
+  .scale {
+    width: 10px;
+    border-radius: 4px;
+  }
+
+  .bmi {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .weight-expression__content {
+    flex-direction: column;
+    height: 100%;
+    margin-bottom: 50px;
+  }
+
+  .expression {
+    width: 100%;
+    font-size: 16px;
+    height: 150px;
+    padding: 10px !important;
+  }
+
+  .expression-img__content {
+    width: 100%;
+    height: 200px;
+  }
+
+  .animal-modal {
+    position: fixed !important;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+  }
+
+  .animal-modal__content {
+    width: 100%;
+  }
+
+  .animal-stats__content {
+    width: 300px;
+  }
+
+  .animal-stats__info-container {
+    flex-direction: column;
+    width: 100%;
+    z-index: 100;
+  }
+
+  .animal-stats__name,
+  .animal-stats__user-name {
+    font-size: 25px;
+  }
+
+  .animal-stats__data-value {
+    font-size: 15px;
+  }
+
+  .animal-stats__img-container {
+    width: 300px;
+    height: 150px;
+  }
+
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100% !important;
+    width: 100vw;
+    z-index: 100;
+    background-color: black;
+    opacity: 0.5;
+  }
+}
+@media only screen and (min-width: 501px) and (max-width: 700px) {
+  .main {
+    flex-direction: column;
+  }
+
+  .calculator {
+    width: 100%;
+  }
+
+  .calculator__content {
+    width: 80%;
+  }
+
+  .profile {
+    margin: 30px 0 30px 0;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .profile__img-container {
+    margin: 0 auto;
+    width: 80px;
+    height: 80px;
+  }
+
+  .profile__input--name {
+    text-align: center;
+    width: 100%;
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing: 3px;
+  }
+
+  .profile__input-container {
+    justify-content: center;
+  }
+
+  .calculator__info-container {
+    margin: 10px 0 20px 0;
+    height: 60px;
+  }
+
+  .calculator__age-slide {
+    font-size: 18px;
+    height: 60px !important;
+  }
+
+  .swiper-slide-active .calculator__age-slide {
+    font-size: 27px;
+  }
+
+  .calculator__data-value {
+    color: white;
+    text-align: center;
+    font-family: Inter;
+    font-size: 40px;
+    width: 25%;
+  }
+
+  .animal-stats__info-container {
+    flex-direction: column;
+    z-index: 100;
+  }
+
+  .animal-modal__content {
+    width: 100%;
+  }
+
+  .animal-modal {
+    position: fixed !important;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+  }
+
+  .animal-stats__name,
+  .animal-stats__user-name {
+    font-size: 25px;
+  }
+
+  .animal-stats__content {
+    width: 300px;
+  }
+
+  .animal-stats__data-value {
+    font-size: 15px;
+  }
+
+  .animal-stats__img-container {
+    width: 300px;
+    height: 200px;
+  }
+
+  .gauge-chart {
+    width: 100%;
+    height: auto;
+  }
+
+  .gauge-chart__content {
+    position: relative;
+    margin-top: 35px;
+    width: 100%;
+  }
+  
+  .gauge-chart__bmi-title {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .bmi {
+    font-size: 24px;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+  }
+
+  .scale__content {
+    gap: 8px;
+  }
+
+  .scale {
+    width: 15px;
+    border-radius: 6px;
+  }
+
+  .weight-expression__content {
+    flex-direction: column;
+    height: 100%;
+    margin-bottom: 50px;
+  }
+
+  .expression {
+    width: 80%;
+    font-size: 17px;
+    height: 200px;
+    padding: 10px !important;
+  }
+
+  .expression-img__content {
+    width: 80%;
+    height: 200px;
+  }
+
+  .overlay {
+    position: fixed;
+    height: 100% !important;
+  }
+}
+@media only screen and (min-width: 701px) and (max-width: 900px) {
+  .main {
+    flex-direction: column;
+  }
+
+  .calculator {
+    width: 100%;
+  }
+
+  .calculator__content {
+    width: 60%;
+  }
+
+  .profile {
+    margin: 30px 0 30px 0;
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .profile__img-container {
+    margin: 0 auto;
+    width: 80px;
+    height: 80px;
+  }
+
+  .profile__input--name {
+    text-align: center;
+    width: 100%;
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing: 3px;
+  }
+
+  .profile__input-container {
+    justify-content: center;
+  }
+
+  .calculator__info-container {
+    margin: 10px 0 20px 0;
+    height: 60px;
+  }
+
+  .calculator__age-slide {
+    font-size: 18px;
+    height: 60px !important;
+  }
+
+  .swiper-slide-active .calculator__age-slide {
+    font-size: 27px;
+  }
+
+  .calculator__data-value {
+    color: white;
+    text-align: center;
+    font-family: Inter;
+    font-size: 40px;
+    width: 25%;
+  }
+
+  .animal-stats__info-container {
+    flex-direction: column;
+    z-index: 100;
+  }
+
+  .animal-modal__content {
+    width: 100%;
+  }
+
+  .animal-modal {
+    position: fixed !important;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+  }
+
+  .animal-stats__name,
+  .animal-stats__user-name {
+    font-size: 35px;
+  }
+
+  .animal-stats__content {
+    width: 500px;
+  }
+
+  .animal-stats__data-value {
+    font-size: 25px;
+  }
+
+  .animal-stats__img-container {
+    width: 500px;
+    height: 250px;
+  }
+
+  .gauge-chart {
+    width: 100%;
+    height: auto;
+  }
+
+  .gauge-chart__content {
+    position: relative;
+    margin-top: 35px;
+    width: 60%;
+  }
+
+  .gauge-chart__bmi-title {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .bmi {
+    font-size: 24px;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+  }
+
+  .scale__content {
+    gap: 10px;
+  }
+
+  .scale {
+    width: 17px;
+    border-radius: 8px;
+  }
+
+  .weight-expression__content {
+    flex-direction: column;
+    height: 100%;
+    margin-bottom: 50px;
+  }
+
+  .expression {
+    width: 100%;
+    font-size: 18px;
+    height: 200px;
+    padding: 10px !important;
+  }
+
+  .expression-img__content {
+    width: 100%;
+    height: 200px;
+  }
+
+  .overlay {
+    position: fixed;
+    height: 100% !important;
+  }
+}
+@media only screen and (min-width: 901px) and (max-width: 1100px) {
+  .main {
+    align-items: center;
+    height: 100vh;
+  }
+  .calculator {
+    justify-content: center;
+  }
+  .calculator__content {
+    width: 85%;
+  }
+  .profile {
+    justify-content: center;
+    width: 100%;
+  }
+  .profile__img-container {
+    width: 80px;
+    height: 80px;
+  }
+  .profile__input--name {
+    font-size: 27px;
+  }
+  .profile__input--gender {
+    font-size: 16px;
+    width: 30%;
+  }
+  .calculator__info-container {
+    margin: 10px 0 30px 0;
+    height: 60px;
+  }
+  .calculator__age-slide {
+    font-size: 18px;
+    height: 60px !important;
+  }
+  .swiper-slide-active .calculator__age-slide {
+    font-size: 29px;
+  }
+  .calculator__data-value {
+    font-size: 40px;
+  }
+  .gauge-chart {
+    height: 100%;
+  }
+  .gauge-chart__content {
+    margin: 0;
+    width: 85%;
+  }
+  .gauge-chart__bmi-title {
+    font-size: 30px;
+  }
+  .bmi {
+    font-size: 24px;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+  }
+  .scale__content {
+    gap: 10px;
+  }
+  .scale {
+    width: 10px;
+    border-radius: 8px;
+  }
+  .weight-expression__content {
+    display: flex;
+    align-items: center;
+    height: 150px;
+  }
+  .expression {
+    font-size: 12px;
+    height: 100%;
+    background-color: white;
+  }
+  .expression-img__content {
+    height: 100%;
+  }
+  .animal-modal__content {
+    width: 100%;
+  }
+
+  .animal-modal {
+    position: fixed !important;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+  }
+
+  .animal-stats__name,
+  .animal-stats__user-name {
+    font-size: 25px;
+  }
+
+  .animal-stats__content {
+    width: 300px;
+  }
+
+  .animal-stats__data-value {
+    font-size: 18px;
+  }
+
+  .animal-stats__img-container {
+    width: 300px;
+    height: 250px;
+  }
+}
+@media only screen and (min-width: 1101px) and (max-width: 1350px) {
+  .main {
+    align-items: center;
+    height: 100vh;
+  }
+  .calculator {
+    justify-content: center;
+  }
+  .calculator__content {
+    width: 75%;
+  }
+  .profile {
+    justify-content: center;
+    width: 100%;
+  }
+  .profile__img-container {
+    width: 80px;
+    height: 80px;
+  }
+  .profile__input--name {
+    font-size: 27px;
+  }
+  .profile__input--gender {
+    font-size: 16px;
+    width: 30%;
+  }
+  .calculator__info-container {
+    margin: 10px 0 30px 0;
+    height: 60px;
+  }
+  .calculator__age-slide {
+    font-size: 18px;
+    height: 60px !important;
+  }
+  .swiper-slide-active .calculator__age-slide {
+    font-size: 29px;
+  }
+  .calculator__data-value {
+    font-size: 40px;
+  }
+  .gauge-chart {
+    height: 100%;
+  }
+  .gauge-chart__content {
+    margin: 0;
+    width: 75%;
+  }
+  .gauge-chart__bmi-title {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  .bmi {
+    font-size: 22px;
+  }
+  .scale__content {
+    gap: 10px;
+  }
+  .scale {
+    width: 13px;
+  }
+  .weight-expression__content {
+    display: flex;
+    align-items: center;
+    height: 200px;
+  }
+  .expression {
+    font-size: 14px;
+    height: 100%;
+    background-color: white;
+  }
+  .expression-img__content {
+    height: 100%;
+  }
+  .animal-modal__content {
+    width: 100%;
+  }
+
+  .animal-modal {
+    position: fixed !important;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+  }
+
+  .animal-stats__name,
+  .animal-stats__user-name {
+    font-size: 30px;
+  }
+
+  .animal-stats__content {
+    width: 400px;
+  }
+
+  .animal-stats__data-value {
+    font-size: 22px;
+  }
+
+  .animal-stats__img-container {
+    width: 400px;
+    height: 350px;
+  }
+}
+@media only screen and (min-width: 1351px) and (max-width: 1700px) {
+  .main {
+    align-items: center;
+    height: 100vh;
+  }
+  .calculator {
+    justify-content: center;
+  }
+  .calculator__content {
+    width: 65%;
+  }
+  .profile {
+    justify-content: center;
+    width: 100%;
+  }
+  .profile__img-container {
+    width: 80px;
+    height: 80px;
+  }
+  .profile__input--name {
+    font-size: 27px;
+    padding: 0;
+  }
+  .profile__input--gender {
+    font-size: 16px;
+    width: 50%;
+  }
+  .calculator__info-container {
+    margin: 10px 0 30px 0;
+    height: 60px;
+  }
+  .calculator__age-slide {
+    font-size: 18px;
+    height: 60px !important;
+  }
+  .swiper-slide-active .calculator__age-slide {
+    font-size: 29px;
+  }
+  .calculator__data-value {
+    font-size: 40px;
+  }
+  .gauge-chart {
+    height: 100%;
+  }
+  .gauge-chart__content {
+    margin: 0;
+    width: 65%;
+  }
+  .gauge-chart__bmi-title {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  .bmi {
+    font-size: 25px;
+  }
+  .scale__content {
+    gap: 12px;
+  }
+  .scale {
+    width: 15px;
+  }
+  .weight-expression__content {
+    display: flex;
+    align-items: center;
+    height: 200px;
+  }
+  .expression {
+    font-size: 13px;
+    height: 100%;
+    background-color: white;
+  }
+  .expression-img__content {
+    height: 100%;
+  }
+}
